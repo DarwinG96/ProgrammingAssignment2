@@ -14,7 +14,7 @@ makeCacheMatrix <- function(data = matrix()) {  # The input argument  'data' is 
   getd <- function() data                       # This function defines the getter for the vector 'data'.
   setinv<- function(inv2) inv <<- inv2          # This function defines the setter for the INVERSE of matrix in 'inv'
   getinv <- function() inv                      # This function defines the getter for the INVERSE 'inv'
-  list(setd = setd, getd = getd,                # Create a new object by returning a list(), gives the name 'setd' to the setd() and 'getd' to the getd() functions 
+  list(setd = setd, getd = getd,                # Create a new object by returning a list(), gives the name 'setd' to the setd() and 'getd' to the getd() function 
        setinv = setinv,                         # gives the name 'setinv' to the setinv() function defined above
        getinv = getinv)                         # gives the name 'getinv' to the geinv() function defined above
 }
